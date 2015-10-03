@@ -1,0 +1,12 @@
+﻿<Window x:Class="MailingList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Name ="btnOpenFile" Content="Open File" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="422,24,0,0" Click="btnOpenFile_Click" />
+        <TextBlock x:Name ="tblResult" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="10,10,0,0" Height="82" Width="302"/>
+        <TextBlock Name ="tblParse" TextWrapping="Wrap" Width="290" Height="55" Margin="22,123,205,191" />
+        <Button Content="Parse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="422,62,0,0" Click="Button_Click"/>
+
+    </Grid>
+</Window>
