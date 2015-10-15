@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{8889C820-E1B1-4591-BAC0-B774DA45C3A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDelegate", "CarDelegate\CarDelegate.csproj", "{FB0593DD-3966-43EC-9A2D-5A6BEAF53610}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8889C820-E1B1-4591-BAC0-B774DA45C3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8889C820-E1B1-4591-BAC0-B774DA45C3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8889C820-E1B1-4591-BAC0-B774DA45C3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8889C820-E1B1-4591-BAC0-B774DA45C3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0593DD-3966-43EC-9A2D-5A6BEAF53610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0593DD-3966-43EC-9A2D-5A6BEAF53610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0593DD-3966-43EC-9A2D-5A6BEAF53610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0593DD-3966-43EC-9A2D-5A6BEAF53610}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
