@@ -83,6 +83,29 @@ namespace PracticalLINQ
             return customerList;
         }
 
+        public IEnumerable<string> GetNames(List<Customer> customerList)
+        {
+            var query = customerList.Select(c => c.LastName + " " + c.FirstName);
+            return query;
+        }
+
+        public dynamic GetNamesAndEmail(List<Customer> customerList)
+        {
+            var query = customerList.Select(c => new { 
+            Name = c.LastName + "," + c.FirstName,
+            c.EmailAddress
+            });
+
+            foreach (var item in query)
+            {
+                Console.WriteLine(item.Name + ":" + item.EmailAddress);
+            }
+            return query;
+        }
+
+
+        
+
         public IEnumerable<Customer> SortByName(List<Customer> customerList)
         {
             return customerList.OrderBy(c => c.LastName).ThenBy(c => c.FirstName);
