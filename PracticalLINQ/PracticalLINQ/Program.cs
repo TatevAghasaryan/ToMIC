@@ -12,7 +12,9 @@ namespace PracticalLINQ
         {
             CustomerRepository cust = new CustomerRepository();
             var custList = cust.Retrieve();
-            var result = cust.Find(custList,3);
+            // var result = cust.Find(custList,3);
+             var result = cust.SortByName(custList);
+            
             Console.WriteLine(result);
 
 

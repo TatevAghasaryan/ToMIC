@@ -12,6 +12,10 @@ namespace StringExtension
         {
             var source = "hello world!";
             Console.WriteLine(source.ConvertToTitleCase());
+            Builder b = new Builder();
+            b.BuildIntegerSequence();
+            
+            
             Console.ReadKey();
         }
     }

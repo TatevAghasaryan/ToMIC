@@ -82,5 +82,30 @@ namespace PracticalLINQ
         };
             return customerList;
         }
-    }
+
+        public IEnumerable<Customer> SortByName(List<Customer> customerList)
+        {
+            return customerList.OrderBy(c => c.LastName).ThenBy(c => c.FirstName);
+        }
+
+        public IEnumerable<Customer> SortByNameInReverse(List<Customer> customerList)
+        {
+            //return customerList.OrderByDescending(c => c.LastName).ThenByDescending(c => c.FirstName);
+            return SortByName(customerList).Reverse();
+        }
+
+        public IEnumerable<Customer> SortByType(List<Customer> customerList)
+        {
+            //return customerList.OrderByDescending(c => c.LastName).ThenByDescending(c => c.FirstName);
+            return customerList.OrderByDescending(c => c.CustomerTypeID.HasValue).ThenBy(c => c.CustomerTypeID);
+        }
+
+        public IEnumerable<Customer> RetrieveEmptyList()
+        {
+            //return customerList.OrderByDescending(c => c.LastName).ThenByDescending(c => c.FirstName);
+            return Enumerable.Repeat(new Customer(), 5);
+        }
+
+        }
+
 }
