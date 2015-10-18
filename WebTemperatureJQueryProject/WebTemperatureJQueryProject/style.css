@@ -1,17 +1,19 @@
 ﻿body {
-}
-.container {
-    border: 1px solid #0094ff;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 50px auto 20px;
-    width: 80%;
+    font-family:"Lucida Console", Monaco, monospace;
+    margin-top:0;
+    background-color:white;
+    line-height:30px;
 }
 
-.result {
-    background-color: #5d92bf;
-    color: white;
-    font-size: larger;
-    border: 2px solid #37536b;
-    padding: 5px 15px;
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: auto;
+    width: 60%;
+    
+}
+#get {
+    border-radius:5px;
+    
+
 }

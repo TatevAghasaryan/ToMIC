@@ -4,12 +4,23 @@
     <title></title>
     <link href="style.css" rel="stylesheet" />
 </head>
-<body>
+<body class="body">
     <div class="container">
-        <select id="capitals"></select>
-        <button id="get">Get weather</button>
-        
-    </div>
+        <div class="header">
+            <select id="capitals"></select>
+            <button id="get">Get weather</button><br />
+        </div>
+        <div class="content">
+            City: <span id="name"></span><br />
+            Latitude: <span id="coordLat"></span><br />
+            Longitude: <span id="coordLon"></span><br />
+            Humidity: <span id="mainHumidity"></span><br />
+            Pressure: <span id="mainPressure"></span><br />
+            Temperature: <span id="mainTemp"></span><br />
+            Max temperature: <span id="mainTempMax"></span><br />
+            Min temperature: <span id="mainTempMin"></span>
+        </div>
+        </div>
     
     <script src="Scripts/jquery-2.1.4.js"></script>   
     <script src="app.js"></script>
