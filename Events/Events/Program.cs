@@ -10,6 +10,12 @@ namespace Events
     {
         static void Main(string[] args)
         {
+            Printer printer = new Printer();
+            printer.PrintStarted += (sender, e) => { Console.WriteLine("Print is started"); };
+            printer.Printing += (sender, e) => { Console.WriteLine("Printing"); };
+            printer.PrintFinished += (sender, e) => { Console.WriteLine("Print is finished"); };
+            printer.Print(5);
+            Console.ReadKey();
         }
     }
 }
