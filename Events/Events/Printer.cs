@@ -18,7 +18,7 @@ namespace Events
             for (int i = 0; i < page; i++)
             {
                 OnPrinting();
-                Console.WriteLine("Page: " + i);
+                Console.WriteLine("Printing: {0} out of {1} ", i+1, page);
             }
             OnPrintFinished();
         }
